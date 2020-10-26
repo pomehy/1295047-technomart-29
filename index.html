@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body>
-    <header>
-
+  <body class="page-body">
+    <header class="page-header main-header">
+      <div class="main-header__top">
+        <a class="logo" href="">Техномарт</a>
+        <form class="main-nav__search" method="GET" action="#">
+          <label for="main-search">Поиск по сайту:</label>
+          <input type="search" name="main-search" id="main-search" placeholder="Поиск:">
+        </form>
+        <div class="user-menu">
+          <div class="user-menu__item bookmarks">
+            <a href="#">Закладки:</a><span class="bookmarks__value">0</span>
+          </div>
+          <div class="user-menu__item cart">
+            <a href="#">Корзина</a><span class="cart__value"></span>
+          </div>
+          <div class="user-menu__item">
+            <a class="" href="#">Оформить заказ</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-header__middle">
+        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="main-header__contacts">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="main-header__autorization autorization">
+          <a class="autorization__login" href="#">Войти</a>
+          <a class="autorization__registration" href="#">Регистрация</a>
+          <a class="autorization__user" href="#">Равшан Джамшутович</a>
+          <ul class="autorization__list">
+            <li class="autorization__item">
+              <a class="autorization__link" href="#">Мои заказы</a>
+            </li>
+            <li class="autorization__item">
+              <a class="autorization__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <nav class="main-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Компания</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Новости</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Спецпредложения</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main>
+    <main class="page-main">
 
     </main>
-    <footer>
+    <footer class="page-footer">
 
     </footer>
 
