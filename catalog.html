@@ -86,8 +86,81 @@
         </li>
       </ul>
       <h1>Перфораторы</h1>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <section class="catalog__filter filter">
+          <h3>Фильтр:</h3>
+          <form class="filter__form" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Стоимость</legend>
+              <div class="filter__range range">
+                <div class="range__controls">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle range__toggle--min"></div>
+                  <div class="range__toggle range__toggle--max"></div>
+                </div>
+                <div class="range__price">
+                  <label class="range-min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="range-max-price">
+                    до <input type="number" name="max-price" value="30000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filter-maker">
+              <legend>Цвет</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="visually-hidden filter__input-checkbox" type="checkbox" name="maker-bosch"
+                    id="maker-bosch" checked>
+                  <label for="maker-bosch">Bosch</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visually-hidden filter__input-checkbox" type="checkbox" name="maker-interskol"
+                    id="maker-interskol">
+                  <label for="maker-interskol">Интерскол</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visually-hidden filter__input-checkbox" type="checkbox" name="maker-makita"
+                    id="maker-makita" checked>
+                  <label for="maker-makita">Синий</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visually-hidden filter__input-checkbox" type="checkbox" name="maker-dewalt"
+                    id="maker-dewalt">
+                  <label for="maker-dewalt">Красный</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visually-hidden filter__input-checkbox" type="checkbox" name="maker-hitachi"
+                    id="maker-hitachi">
+                  <label for="maker-hitachi">Розовый</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-energy">
+              <legend>Питание</legend>
+              <ul class="filter__list">
+                <li class="filter__item">
+                  <input class="visually-hidden filter__input-radio" type="radio" name="energy" value="energy-battery"
+                    id="energy-battery" checked>
+                  <label for="energy-battery">Аккумуляторные</label>
+                </li>
+                <li class="filter__item">
+                  <input class="visually-hidden filter__input-radio" type="radio" name="energy" value="energy-cable"
+                    id="energy-cable">
+                  <label for="energy-cable">Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="filter__button" type="submit">Показать</button>
+          </form>
+        </section>
 
-      </div>
+      </section>
     </main>
     <footer class="page-footer main-footer">
       <section class="main-footer__nav footer-nav">
