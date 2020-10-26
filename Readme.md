@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Глеб Хлопков](https://up.htmlacademy.ru/htmlcss/29/user/1295047).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
