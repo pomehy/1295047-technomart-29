@@ -91,3 +91,47 @@
   --basic-error: #BA2732;
 }
 
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-style: normal;
+
+  color: var(--basic-black);
+
+  background-color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
