@@ -250,6 +250,12 @@ img {
   color: var(--basic-black);
 }
 
+.autorization--active .autorization__login,
+.autorization--active .autorization__registration {
+  display: none;
+}
+
+
 .autorization__user {
   display: none;
 }
@@ -293,6 +299,24 @@ img {
   color: var(--basic-white);
 }
 
+.page-main__title {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-blue-dark);
+  text-transform: uppercase;
+
+  background-color: var(--basic-grey-light);
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
 
 /* promo */
 
