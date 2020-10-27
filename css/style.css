@@ -97,7 +97,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'PT Sans', Arial, sans-serif;
-  font-style: normal;
 
   color: var(--basic-black);
 
@@ -134,4 +133,97 @@ img {
   margin: 0 auto;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+
+.main-header__top {
+  background-color: var(--basic-blue-darken);
+}
+
+
+/* main-nav__search */
+
+.main-nav__search input {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+
+  background-color: transparent;
+  border: none;
+}
+
+.main-nav__search input::placeholder {
+  color: var(--basic-white);
+}
+
+.user-menu__item a {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.main-header__middle {
+  background-color: var(--basick-grey-light);
+}
+
+.main-header__description {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.main-header__contacts a {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+}
+
+.main-header__contacts p {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-blue-dark);
+}
+
+.autorization__button {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+}
+
+.autorization__user {
+  display: none;
+}
+
+.autorization--active .autorization__user {
+  display: block;
+}
+
+.autorization__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.autorization--active .autorization__list {
+  display: block;
 }
