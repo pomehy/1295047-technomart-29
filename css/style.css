@@ -416,6 +416,29 @@ img {
 
   list-style: none;
 }
+
+.pagination__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination__link,
+.pagination__next {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.pagination__link--active {
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
 /* promo */
 
 .promo__list {
