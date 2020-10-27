@@ -188,6 +188,11 @@ img {
   background-color: var(--basic-red);
 }
 
+.logo:active {
+  background-color: var(--basic-red-dark);
+}
+
+
 .main-nav__search input {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
@@ -198,6 +203,13 @@ img {
 
   background-color: transparent;
   border: none;
+}
+
+.main-nav__search input:focus {
+  background-color: var(--basic-white);
+}
+.main-nav__search input:focus::placeholder {
+  color: var(--basic-black);
 }
 
 .main-nav__search input::placeholder {
@@ -211,6 +223,25 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+}
+
+.user-menu__item a:active {
+  background-color: var(--color-blackdark);
+  color: var(--basic-white-transparent-50);
+}
+
+.pay a {
+  background-color: var(--basic-green);
+}
+
+.pay a:hover,
+.pay a:focus {
+  background-color: var(--basic-green-light);
+}
+
+.pay a:active {
+
+  background-color: var(--basic-green);
 }
 
 .main-header__middle {
