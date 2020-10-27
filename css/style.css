@@ -330,6 +330,15 @@ img {
   list-style: none;
 }
 
+.breadcrumbs__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
 .filter h3 {
   font-style: normal;
   font-weight: 400;
