@@ -227,3 +227,26 @@ img {
 .autorization--active .autorization__list {
   display: block;
 }
+
+.main-header__nav {
+  background-color: var(--basick-grey-light);
+}
+
+.main-nav__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: var(--basic-blue-dark);
+
+  list-style: none;
+}
+
+.main-nav__link {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
