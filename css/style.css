@@ -85,7 +85,7 @@
   --special-yellow-light: #FFD180;
 
   --basic-grey: #C5C5C5;
-  --basick-grey-light: #F1F5F7;
+  --basic-grey-light: #F1F5F7;
   --basic-grey-lighten: #E5E5E5;
   --basic-grey-dark: #B5B5B5;
 
@@ -171,6 +171,15 @@ img {
   background-color: var(--basic-blue-darken);
 }
 
+.section-title {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
 
 /* main-nav__search */
 
@@ -200,7 +209,7 @@ img {
 }
 
 .main-header__middle {
-  background-color: var(--basick-grey-light);
+  background-color: var(--basic-grey-light);
 }
 
 .main-header__description {
@@ -260,7 +269,7 @@ img {
 }
 
 .main-header__nav {
-  background-color: var(--basick-grey-light);
+  background-color: var(--basic-grey-light);
 }
 
 .main-nav__list {
@@ -415,3 +424,83 @@ img {
   background-color: var(--basic-red);
 }
 
+.maker__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service {
+  background-color: var(--basic-grey-light);
+}
+
+.service__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.service__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service__link {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
+
+  background-color: var(--basic-blue-dark);
+}
+
+.service__link:hover,
+.service__link:focus {
+  color: var(--basic-white);
+  background-color: var(--basic-blue-darken);
+}
+
+.service__link--active {
+  color:  var(--basic-blue-dark);
+  background-color: var(--basic-white);
+}
+
+
+.service-slider__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.service-slider__title {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-blue-dark);
+  text-transform: uppercase;
+}
+
+.service-slider__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: var(--basic-black);
+}
+
+.about-us  ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
