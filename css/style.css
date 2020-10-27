@@ -483,6 +483,14 @@ img {
   line-height: 18px;
   color: var(--basic-black-transparent-30);
   text-transform: uppercase;
+
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sort__link:hover,
+.sort__link:focus {
+  color: var(--basic-black);
+  border-bottom-style: solid;
 }
 
 .sort__link--active {
