@@ -9,72 +9,76 @@
   <body class="page-body">
     <header class="page-header main-header">
       <div class="main-header__top">
-        <a class="logo" href="index.html">Техномарт</a>
-        <form class="main-nav__search" method="GET" action="#">
-          <label for="main-search">Поиск по сайту:</label>
-          <input type="search" name="main-search" id="main-search" placeholder="Поиск:">
-        </form>
-        <div class="user-menu">
-          <div class="user-menu__item bookmarks">
-            <a href="#">Закладки:<span class="bookmarks__value">0</span></a>
-          </div>
-          <div class="user-menu__item cart">
-            <a href="#">Корзина<span class="cart__value">0</span></a>
-          </div>
-          <div class="user-menu__item">
-            <a class="" href="#">Оформить заказ</a>
+        <div class="container">
+          <a class="logo" href="index.html">Техномарт</a>
+          <form class="main-nav__search" method="GET" action="#">
+            <label class="visually-hidden" for="main-search">Поиск по сайту:</label>
+            <input type="search" name="main-search" id="main-search" placeholder="Поиск:">
+          </form>
+          <div class="user-menu">
+            <div class="user-menu__item bookmarks">
+              <a href="#">Закладки:<span class="bookmarks__value">0</span></a>
+            </div>
+            <div class="user-menu__item cart">
+              <a href="#">Корзина<span class="cart__value">0</span></a>
+            </div>
+            <div class="user-menu__item">
+              <a class="" href="#">Оформить заказ</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="main-header__middle">
-        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <div class="main-header__contacts">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        <div class="main-header__autorization autorization">
-          <a class="autorization__login" href="#">Войти</a>
-          <a class="autorization__registration" href="#">Регистрация</a>
-          <a class="autorization__user" href="#">Равшан Джамшутович</a>
-          <ul class="autorization__list">
-            <li class="autorization__item">
-              <a class="autorization__link" href="#">Мои заказы</a>
-            </li>
-            <li class="autorization__item">
-              <a class="autorization__link" href="#">Личный кабинет</a>
-            </li>
-          </ul>
+        <div class="container">
+          <p class="main-header__description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <div class="main-header__contacts">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="main-header__autorization autorization">
+            <a class="autorization__button autorization__login" href="#">Войти</a>
+            <a class="autorization__button autorization__registration" href="#">Регистрация</a>
+            <a class="autorization__button autorization__user" href="#">Равшан Джамшутович</a>
+            <ul class="autorization__list">
+              <li class="autorization__item">
+                <a class="autorization__link" href="#">Мои заказы</a>
+              </li>
+              <li class="autorization__item">
+                <a class="autorization__link" href="#">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <nav class="main-header__nav main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Компания</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Спецпредложения</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Доставка</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
-          </li>
-        </ul>
+          <ul class="container main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Компания</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новости</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Спецпредложения</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Интернет-магазин "Техномарт" строительных материалов и инструментов для ремонта</h1>
-      <section class="promo">
+      <section class="container promo">
         <h2 class="visually-hidden">Популярные разделы</h2>
         <ul class="promo__list">
           <li class="promo__item promo__item--new">
@@ -104,22 +108,30 @@
             <li class="slider__item slider__item--active">
               <h3 class="slider__title">Перфораторы</h3>
               <p>Настоящие мужские игрушки</p>
-              <a class="button" href="#">Открыть каталог</a>
-              <img src="" alt="Мужчина строитель - профессионал, делает отверстие в бетонной стене с помощью мощного перфоратора BOSCH">
+              <a class="button slider__link" href="#">Открыть каталог</a>
+              <img src="img/slider-1.jpg" alt="Мужчина строитель - профессионал, делает отверстие в бетонной стене с помощью мощного перфоратора BOSCH" width="620" height="266">
             </li>
             <li class="slider__item">
               <h3 class="slider__title">Дрели</h3>
               <p>Соседям на радость</p>
-              <a class="button" href="#">Открыть каталог</a>
-              <img src="" alt="Мужчина строитель - профессионал, делает отверстие в кирпичной стене с помощью беспроводной дрели BOSCH">
+              <a class="button slider__link" href="#">Открыть каталог</a>
+              <img src="img/slider-2.jpg" alt="Мужчина строитель - профессионал, делает отверстие в кирпичной стене с помощью беспроводной дрели BOSCH" width="620" height="266">
             </li>
           </ul>
-          <a class="button__slider button__slider--prev" href="#"></a>
-          <a class="button__slider button__slider--next" href="#"></a>
+          <a class="slider__button slider__button--prev" href="#"></a>
+          <a class="slider__button slider__button--next" href="#"></a>
+          <ul class="slider__control">
+            <li>
+              <button class="slider__toggle" aria-label="Первый слайд"></button>
+            </li>
+            <li>
+              <button class="slider__toggle" aria-label="Второй слайд"></button>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="popular products">
-        <header>
+        <header class="section-header">
           <h2>Популярные товары:</h2>
           <a class="button" href="#">Все популярные товары</a>
         </header>
@@ -183,7 +195,7 @@
         </ul>
       </section>
       <section class="maker">
-        <header>
+        <header class="section-header">
           <h2>Популярные производители:</h2>
           <a class="button" href="#">Все производители</a>
         </header>
