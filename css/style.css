@@ -945,6 +945,21 @@ img {
   list-style: none;
 }
 
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+
+  background-color: var(--basic-social-color);
+  border-radius: 50%;
+}
+
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+  background-color: var(--basic-red);
+}
+
 .main-footer__bottom p {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
@@ -961,4 +976,14 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--special-yellow-light);
+}
+
+.main-footer__bottom a:hover,
+.main-footer__bottom a:focus {
+  text-decoration: underline;
+}
+
+.main-footer__bottom a:active {
+  text-decoration: none;
+  color: var(--basic-red);
 }
