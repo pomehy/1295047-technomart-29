@@ -670,6 +670,18 @@ img {
   line-height: 24px;
 }
 
+.facts {
+  background-color: var(--basic-grey-light);
+}
+
+.facts p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
 .main-footer {
   background-color: var(--basic-blue-dark);
 }
