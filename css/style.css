@@ -524,3 +524,86 @@ img {
   font-size: 18px;
   line-height: 24px;
 }
+
+.main-footer {
+  background-color: var(--basic-blue-dark);
+}
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-nav__link {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-grey-light);
+}
+
+.main-footer__bottom {
+  background-color: var(--basic-blue-darken);
+}
+
+.main-footer__contacts p {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-grey-light);
+}
+
+.main-footer__contacts a {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-grey-light);
+}
+
+.second-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.second-nav__link {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--special-yellow-light);
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-footer__bottom p {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.main-footer__bottom a {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-yellow-light);
+}
