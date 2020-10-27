@@ -141,6 +141,29 @@ img {
   padding-left: 10px;
 }
 
+.button {
+  padding-top: 13px;
+  padding-bottom: 9px;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+
+  background-color: var(--basic-red);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic-red-light);
+}
+
+.button:active {
+  background-color: var(--basic-red-dark);
+}
+
 
 .main-header__top {
   background-color: var(--basic-blue-darken);
@@ -309,3 +332,34 @@ img {
 }
 
 
+.slider__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider__title {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-white);
+}
+
+.slider__item p {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.slider__control {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
