@@ -504,7 +504,12 @@ img {
   list-style: none;
 }
 
+.pagination {
+  display: flex;
+}
+
 .pagination__list {
+  display: flex;
   margin: 0;
   padding: 0;
 
@@ -513,13 +518,35 @@ img {
 
 .pagination__link,
 .pagination__next {
+  display: flex;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
+
+  border: 1px solid var(--basic-grey-lighten);
+  border-radius: 2px;
 }
+
+.pagination__link:hover,
+.pagination__next:hover,
+.pagination__link:focus,
+.pagination__next:focus {
+  border-color: var(--basic-grey);
+}
+
+.pagination__link:active,
+.pagination__next:active {
+  border-color: var(--basic-red);
+}
+
 
 .pagination__link--active {
   color: var(--basic-white);
