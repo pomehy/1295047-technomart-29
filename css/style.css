@@ -741,6 +741,21 @@ img {
   list-style: none;
 }
 
+.maker__link {
+  display: block;
+  background: var(--basic-white);
+  border: 1px solid var(--basic-border-color);
+}
+
+.maker__link:hover,
+.maker__link:focus {
+  box-shadow: 0px 4px 20px var(--basic-black-transparent-15);
+}
+
+.maker__link:active {
+  opacity: 0.5;
+}
+
 .service {
   background-color: var(--basic-grey-light);
 }
@@ -865,6 +880,16 @@ img {
   color: var(--basic-grey-light);
 }
 
+.footer-nav__list .footer-nav__link:hover,
+.footer-nav__list .footer-nav__link:focus {
+  text-decoration: underline;
+}
+
+.footer-nav__list .footer-nav__link:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
 .main-footer__bottom {
   background-color: var(--basic-blue-darken);
 }
@@ -901,6 +926,16 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--special-yellow-light);
+}
+
+.second-nav__list .second-nav__link:hover,
+.second-nav__list .second-nav__link:focus {
+  text-decoration: underline;
+}
+
+.second-nav__list .second-nav__link:active {
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 .social__list {
