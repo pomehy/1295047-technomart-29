@@ -716,6 +716,9 @@ img {
 }
 
 .products__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 
@@ -723,6 +726,9 @@ img {
 }
 
 .products__item {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
   border: 1px solid var(--basic-border-color);
 }
 
@@ -825,6 +831,9 @@ img {
 }
 
 .maker__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
   margin: 0;
   padding: 0;
 
@@ -886,12 +895,25 @@ img {
   background-color: var(--basic-white);
 }
 
+.service-slider {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  gap: 80px;
+}
 
 .service-slider__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.service-slider__item {
+  display: none;
+}
+
+.service-slider__item--active {
+  display: block;
 }
 
 .service-slider__title {
@@ -911,6 +933,10 @@ img {
   line-height: 24px;
 
   color: var(--basic-black);
+}
+.about-company-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .about-us p,
@@ -936,6 +962,12 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
 }
 
 .facts {
