@@ -92,7 +92,9 @@
   --old-price-color: #A9A9A9;
 
   --basic-boxshadow-color: #EAEAEA;
-  --basic-flax-color: F7F3EC;
+
+  --basic-section-header-bgcolor: #F9F5F0;
+  --basic-flax-color: #F7F3EC;
 
   --basic-error: #BA2732;
 }
@@ -304,9 +306,10 @@ img {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
   color: var(--basic-white);
+  text-transform: uppercase;
 
   background-color: var(--basic-white-transparent-30);
 }
@@ -362,4 +365,18 @@ img {
   padding: 0;
 
   list-style: none;
+}
+
+.section-header {
+  background-color: var(--basic-section-header-bgcolor);
+}
+
+.section-header h2 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-blue-dark);
+  text-transform: uppercase;
 }
