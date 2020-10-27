@@ -55,6 +55,7 @@
 :root {
   --basic-white: #ffffff;
   --basic-white-transparent-50: rgba(255, 255, 255, 0.5);
+  --basic-white-transparent-30: rgba(255, 255, 255, 0.3);
   --basic-black: #000000;
   --basic-black-transparent-1: rgba(0, 0, 0, 0.01);
   --basic-red: #EE3643;
@@ -65,16 +66,21 @@
   --color-blackdark: #161D29;
   --color-blackdarken: #1D2739;
 
+  --special-blue-sky: #3BBCE3;
   --basic-blue: #3D546F;
   --basic-blue-dark: #32425C;
   --basic-blue-darken: #293449;
 
   --basic-social-color: #212A3A;
 
+  --special-pink: #DC91D8;
+  --special-green: #8ED78F;
+
   --basic-green: #63A63E;
   --basic-green-light: #5FBB2D;
   --basic-green-dark: #518534;
 
+  --special-yellow-dark: #FFC047;
   --special-yellow: #FFBF47;
   --special-yellow-light: #FFD180;
 
@@ -162,7 +168,7 @@ img {
 .user-menu__item a {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
@@ -175,7 +181,7 @@ img {
 .main-header__description {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: italic;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
@@ -184,7 +190,7 @@ img {
 .main-header__contacts a {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
@@ -193,7 +199,7 @@ img {
 .main-header__contacts p {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-blue-dark);
@@ -202,7 +208,7 @@ img {
 .autorization__button {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -245,8 +251,61 @@ img {
 .main-nav__link {
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
 }
+
+
+/* promo */
+
+.promo__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__item h3 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: var(--basic-white);
+}
+
+.promo__link {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-white);
+
+  background-color: var(--basic-white-transparent-30);
+}
+
+.promo__item:nth-child(1) {
+  background-color: var(--special-yellow);
+}
+
+.promo__item:nth-child(2) {
+  background-color: var(--special-blue-sky);
+}
+
+.promo__item:nth-child(3) {
+  background-color: var(--special-pink);
+}
+
+.promo__item:nth-child(4) {
+  background-color: var(--special-green);
+}
+
+.promo__item:nth-child(5) {
+  background-color: var(--special-yellow-dark);
+}
+
+
