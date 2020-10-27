@@ -284,6 +284,15 @@ img {
   color: var(--basic-black);
 }
 
+.autorization__button:hover,
+.autorization__button:focus {
+  color: var(--basic-red);
+}
+
+.autorization__button:active {
+  color: var(--basic-grey);
+}
+
 .autorization--active .autorization__login,
 .autorization--active .autorization__registration {
   display: none;
@@ -313,6 +322,15 @@ img {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-blue-dark);
+}
+
+.autorization__link:hover,
+.autorization__link:focus {
+  color: var(--basic-red);
+}
+
+.autorization__link:active {
+  color: var(--basic-grey);
 }
 
 .autorization--active .autorization__list {
