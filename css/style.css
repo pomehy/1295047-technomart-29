@@ -56,13 +56,16 @@
   --basic-white: #ffffff;
   --basic-white-transparent-50: rgba(255, 255, 255, 0.5);
   --basic-white-transparent-30: rgba(255, 255, 255, 0.3);
+
   --basic-black: #000000;
   --basic-black-transparent-1: rgba(0, 0, 0, 0.01);
   --basic-black-transparent-15: rgba(0, 0, 0, 0.15);
+  --basic-black-transparent-24: rgba(0, 0, 0, 0.24);
   --basic-black-transparent-30: rgba(0, 0, 0, 0.3);
   --basic-red: #EE3643;
   --basic-red-dark: #BA2732;
   --basic-red-light: #CA2C37;
+  --basic-red-boxshadow-logo: #b52933;
 
 
   --color-blackdark: #161D29;
@@ -178,7 +181,7 @@ img {
 
 .main-header__top .container {
   display: grid;
-  grid-template-columns: 3fr 3fr 6fr;
+  grid-template-columns: max-content 3fr 5fr;
 }
 
 .section-title {
@@ -192,15 +195,48 @@ img {
 }
 
 .logo {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-width: 220px;
   background-color: var(--basic-red);
+}
+
+.logo::after {
+  content: '';
+
+  position: absolute;
+  bottom: -5px;
+
+  width: 100%;
+  height: 5px;
+
+  background-color: var(--basic-red);
+
+  box-shadow: inset 0px -5px 0px var(--basic-black-transparent-24);
+}
+
+.logo:active::after {
+  background-color: var(--basic-red-dark);
+}
+
+.logo img {
+  margin: auto;
 }
 
 .logo:active {
   background-color: var(--basic-red-dark);
 }
 
+.main-nav__search {
+  display: flex;
+}
+
 .main-nav__search input {
   width: 100%;
+  padding-left: 42px;
+  padding-right: 15px;
 
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
@@ -230,18 +266,35 @@ img {
   justify-content: space-between;
 }
 
+.user-menu__item {
+  display: flex;
+  min-width: 150px;
+}
+
 .user-menu__item a {
+  width: 100%;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
+  text-align: center;
 }
 
 .user-menu__item a:active {
   background-color: var(--color-blackdark);
   color: var(--basic-white-transparent-50);
+}
+
+.bookmarks a {
+  padding-left: 19px;
+}
+
+.cart a {
+  padding-left: 23px;
 }
 
 .pay a {
