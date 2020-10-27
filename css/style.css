@@ -181,7 +181,9 @@ img {
   text-transform: uppercase;
 }
 
-/* main-nav__search */
+.logo {
+  background-color: var(--basic-red);
+}
 
 .main-nav__search input {
   font-family: 'Cuprum', Arial, sans-serif;
@@ -498,9 +500,27 @@ img {
   color: var(--basic-black);
 }
 
+.about-us p,
+.contacts p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: var(--basic-black);
+}
+
 .about-us  ul {
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.about-us  li {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
