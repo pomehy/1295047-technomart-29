@@ -58,6 +58,7 @@
   --basic-white-transparent-30: rgba(255, 255, 255, 0.3);
   --basic-black: #000000;
   --basic-black-transparent-1: rgba(0, 0, 0, 0.01);
+  --basic-black-transparent-30: rgba(0, 0, 0, 0.3);
   --basic-red: #EE3643;
   --basic-red-dark: #BA2732;
   --basic-red-light: #CA2C37;
@@ -155,6 +156,8 @@ img {
   color: var(--basic-white);
 
   background-color: var(--basic-red);
+
+  cursor: pointer;
 }
 
 .button:hover,
@@ -318,6 +321,101 @@ img {
   list-style: none;
 }
 
+.filter h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+
+  background-color: var(--basic-flax-color);
+}
+
+.filter__form legend {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter__form label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.filter__range {
+  background-color: var(--basic-flax-color);
+}
+
+.range__price input {
+  background-color: var(--basic-flax-color);
+  border: none;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.filter__button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+
+  cursor: pointer;
+}
+
+.sort {
+  background-color: var(--basic-flax-color);
+}
+
+.sort h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.sort__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black-transparent-30);
+  text-transform: uppercase;
+}
+
+.sort__link--active {
+  color: var(--basic-red);
+}
+
+.sort__buttons-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
 /* promo */
 
 .promo__list {
