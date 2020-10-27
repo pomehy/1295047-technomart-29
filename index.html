@@ -10,7 +10,9 @@
     <header class="page-header main-header">
       <div class="main-header__top">
         <div class="container">
-          <a class="logo" href="index.html">Техномарт</a>
+          <a class="logo" href="index.html">
+            <img src="img/tehnomart-logo.svg" alt="Логотип магазина Техномарт" width="107" height="17">
+          </a>
           <form class="main-nav__search" method="GET" action="#">
             <label class="visually-hidden" for="main-search">Поиск по сайту:</label>
             <input type="search" name="main-search" id="main-search" placeholder="Поиск:">
@@ -267,40 +269,47 @@
         </ul>
       </section>
       <section class="service">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="service-slider">
-          <ul class="service__list service-slider__nav">
-            <li class="service__item">
-              <a class="service__button service__button--active" href="#">Доставка</a>
-            </li>
-            <li class="service__item">
-              <a class="service__button" href="#">Гарантия</a>
-            </li>
-            <li class="service__item">
-              <a class="service__button" href="#">Кредит</a>
-            </li>
-          </ul>
-          <ul class="service__description service-slider__list">
-            <li class="service__delivery service-slider__item service-slider__item--active">
-              <h3 class="service__title">Доставка</h3>
-              <p class="service__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-            </li>
-            <li class="service__warranty service-slider__item">
-              <h3 class="service__title">Гарантия</h3>
-              <p class="service__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-            </li>
-            <li class="service__credit service-slider__item">
-              <h3 class="service__title">Кредит</h3>
-              <p class="service__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-              <a class="button" href="#">Отправить заявку</a>
-            </li>
-          </ul>
+        <div class="container">
+          <h2 class="section-title">Сервисы</h2>
+          <p class="service__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо
+            всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="service-slider">
+            <ul class="service__list service-slider__nav">
+              <li class="service__item">
+                <a class="service__link service__link--active" href="#">Доставка</a>
+              </li>
+              <li class="service__item">
+                <a class="service__link" href="#">Гарантия</a>
+              </li>
+              <li class="service__item">
+                <a class="service__link" href="#">Кредит</a>
+              </li>
+            </ul>
+            <ul class="service__description service-slider__list">
+              <li class="service__delivery service-slider__item service-slider__item--active">
+                <h3 class="service-slider__title">Доставка</h3>
+                <p class="service-slider__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                  бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </li>
+              <li class="service__warranty service-slider__item">
+                <h3 class="service-slider__title">Гарантия</h3>
+                <p class="service-slider__text">Если купленный у нас товар поломается или заискрит, а также в случае
+                  пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                  сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+              </li>
+              <li class="service__credit service-slider__item">
+                <h3 class="service-slider__title">Кредит</h3>
+                <p class="service-slider__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на
+                  помощь.</p>
+                <a class="button" href="#">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <div class="about-company-wrapper">
+      <div class="container about-company-wrapper">
         <section class="about-us">
-          <h2>О нас</h2>
+          <h2 class="section-title">КОМПАНИЯ «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
             равнодушными любителей сэкономить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!
@@ -313,7 +322,7 @@
           <a class="button about-us__link" href="blank.html">Подробнее о компании</a>
         </section>
         <section class="contacts">
-          <h2>Контакты</h2>
+          <h2 class="section-title">Контакты</h2>
           <p>Вы можете забрать товар сами,
             заехав в наш офис:</p>
           <a class="contacts__map" href="#">
@@ -326,7 +335,9 @@
     <footer class="page-footer main-footer">
       <section class="main-footer__nav footer-nav">
         <h2 class="visually-hidden">Навигация по сайту</h2>
-        <a href="#">Техномарт</a>
+        <a class="logo" href="index.html">
+          <img src="img/tehnomart-logo.svg" alt="Логотип магазина Техномарт" width="136" height="21">
+        </a>
         <ul class="footer-nav__list">
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#">Компания</a>
