@@ -475,22 +475,30 @@ img {
 }
 
 .main-nav__list {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   margin: 0;
-  padding: 0;
-
-  background-color: var(--basic-blue-dark);
+  padding-top: 0;
+  padding-right: 29px;
+  padding-bottom: 0;
+  padding-left: 26px;
 
   list-style: none;
+
+  background-color: var(--basic-blue-dark);
+  box-shadow: inset 0px -5px 0px var(--basic-blue-darken);
 }
 
 .main-nav__link {
   display: flex;
   padding-top: 16px;
+  padding-right: 24px;
   padding-bottom: 20px;
+  padding-left: 27px;
 
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
