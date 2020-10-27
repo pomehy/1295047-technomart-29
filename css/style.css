@@ -275,6 +275,15 @@ img {
   list-style: none;
 }
 
+.autorization__link {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-blue-dark);
+}
+
 .autorization--active .autorization__list {
   display: block;
 }
