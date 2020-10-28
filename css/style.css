@@ -302,6 +302,10 @@ img {
   padding-left: 19px;
 }
 
+.cart--active a {
+  background-color: var(--basic-red);
+}
+
 .cart a {
   padding-left: 23px;
 }
@@ -316,7 +320,6 @@ img {
 }
 
 .pay a:active {
-
   background-color: var(--basic-green);
 }
 
@@ -434,6 +437,10 @@ img {
   min-width: 150px;
 }
 
+.autorization--active {
+  flex-direction: column;
+}
+
 .autorization--active .autorization__login,
 .autorization--active .autorization__registration {
   display: none;
@@ -442,6 +449,7 @@ img {
 
 .autorization__user {
   display: none;
+  min-width: 299px;
 }
 
 .autorization--active .autorization__user {
@@ -450,10 +458,6 @@ img {
 
 .autorization__list {
   display: none;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .autorization__link {
@@ -476,7 +480,25 @@ img {
 
 .autorization--active .autorization__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 7px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding: 0;
+
+  list-style: none;
 }
+
+.autorization__item {
+  margin-right: 32px;
+}
+
+.autorization__item:last-child {
+  margin-right: 0;
+}
+
 
 .main-header__nav {
   padding-bottom: 60px;
