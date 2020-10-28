@@ -876,10 +876,17 @@ img {
 .section-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  min-height: 89px;
+  padding-right: 14px;
+  padding-left: 28px;
+
   background-color: var(--basic-section-header-bgcolor);
 }
 
 .section-header h2 {
+  margin-top: 25px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -887,6 +894,15 @@ img {
   line-height: 30px;
   color: var(--basic-blue-dark);
   text-transform: uppercase;
+}
+
+.section-header a {
+  margin-bottom: 1px;
+}
+
+
+.popular {
+  margin-top: 59px;
 }
 
 .products__list {
