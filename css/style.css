@@ -1551,28 +1551,62 @@ article[class$='new']::after {
 
 .main-footer__bottom .container {
   display: grid;
+  grid-template-columns: max-content 1fr 1fr auto;
   gap: 20px;
-  grid-template-columns: max-content 1fr max-content max-content;
   justify-content: space-between;
+  align-items: center;
+  min-height: 108px;
 }
 
 .social {
-  justify-self: center;
+  justify-self: end;
 }
 
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin-top: 0;
+  margin-right: -1px;
+  margin-bottom: 0;
+  margin-left: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.social__item {
+  margin-right: 2px;
+}
+
+
+.social__item .social__link {
+  background-position: 50% 55%;
+  background-repeat: no-repeat;
+}
+
+.social__item:nth-child(1) .social__link {
+  background-image: url('../img/decor/vk-icon.svg');
+}
+
+.social__item:nth-child(2) .social__link {
+  background-image: url('../img/decor/fb-icon.svg');
+}
+
+.social__item:nth-child(3) .social__link {
+  background-image: url('../img/decor/insta-icon.svg');
+}
+
+
+
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
 .social__link {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
 
   background-color: var(--basic-social-color);
   border-radius: 50%;
@@ -1585,6 +1619,9 @@ article[class$='new']::after {
 }
 
 .main-footer__bottom p {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1610,4 +1647,15 @@ article[class$='new']::after {
 .main-footer__bottom a:active {
   text-decoration: none;
   color: var(--basic-red);
+}
+
+.feedback {
+  justify-self: end;
+  margin-right: 32px;
+}
+
+.develop {
+  justify-self: end;
+  padding-right: 12px;
+  box-sizing: border-box;
 }
