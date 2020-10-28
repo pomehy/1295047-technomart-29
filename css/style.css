@@ -550,6 +550,10 @@ img {
 }
 
 .page-main__title {
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -563,10 +567,23 @@ img {
 
 .breadcrumbs {
   display: flex;
-  margin: 0;
+  margin-top: 22px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  margin-right: 41px;
+}
+
+.breadcrumbs__item:first-child .breadcrumbs__link {
+  width: 14px;
+  height: 12px;
 }
 
 .breadcrumbs__link {
