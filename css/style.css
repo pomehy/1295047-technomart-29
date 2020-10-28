@@ -75,8 +75,9 @@
   --basic-blue: #3D546F;
   --basic-blue-dark: #32425C;
   --basic-blue-darken: #293449;
-
   --basic-social-color: #212A3A;
+  --basic-boxshadow-service-slider-button: #405069;
+
 
   --special-pink: #DC91D8;
   --special-green: #8ED78F;
@@ -1212,7 +1213,10 @@ article[class$='new']::after {
 }
 
 .service {
+  margin-top: 70px;
+  padding-top: 40px;
   background-color: var(--basic-grey-light);
+  padding-bottom: 99px;
 }
 
 .service__text {
@@ -1222,14 +1226,46 @@ article[class$='new']::after {
   line-height: 24px;
 }
 
-.service__list {
+.service-slider {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 80px;
+  margin-top: 70px;
+}
+
+.service-slider__nav {
+  position: relative;
+
+  min-width: 240px;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.service__link {
+.service-slider__nav::after {
+  content: '';
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 10px;
+  height: 279px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  background-image: url('../img/decor/service-slider-shadow.png');
+  background-repeat: no-repeat;
+}
+
+.service-slider__button {
+  display: flex;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1238,23 +1274,20 @@ article[class$='new']::after {
   color: var(--basic-white);
 
   background-color: var(--basic-blue-dark);
+  box-shadow: 0px 1px 0px var(--basic-blue-darken), inset 0px 1px 0px var(--basic-boxshadow-service-slider-button);
+  box-sizing: border-box;
 }
 
-.service__link:hover,
-.service__link:focus {
+.service-slider__button:hover,
+.service-slider__button:focus {
   color: var(--basic-white);
   background-color: var(--basic-blue-darken);
 }
 
-.service__link--active {
+.service-slider__button--active {
   color:  var(--basic-blue-dark);
   background-color: var(--basic-white);
-}
-
-.service-slider {
-  display: grid;
-  grid-template-columns: 3fr 8fr;
-  gap: 80px;
+  box-shadow: none;
 }
 
 .service-slider__list {
@@ -1273,6 +1306,8 @@ article[class$='new']::after {
 }
 
 .service-slider__title {
+  margin-top: -4px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1286,7 +1321,7 @@ article[class$='new']::after {
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 25px;
 
   color: var(--basic-black);
 }
