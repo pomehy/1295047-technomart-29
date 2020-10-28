@@ -192,6 +192,8 @@ img {
 }
 
 .section-title {
+  margin-bottom: 24px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1328,10 +1330,19 @@ article[class$='new']::after {
 .about-company-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-top: 45px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-us p,
 .contacts p {
+  margin-top: 0;
+  margin-bottom: 26px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -1340,14 +1351,24 @@ article[class$='new']::after {
   color: var(--basic-black);
 }
 
-.about-us  ul {
-  margin: 0;
-  padding: 0;
+.about-us p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-us ul {
+  margin-top: 3px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 37px;
 
   list-style: none;
 }
 
 .about-us  li {
+  margin-top: 12px;
+  margin-bottom: 12px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1355,10 +1376,36 @@ article[class$='new']::after {
   line-height: 24px;
 }
 
+.about-us li:first-child {
+  margin-top: 0;
+}
+
+.about-us li:last-child {
+  margin-bottom: 0;
+}
+
+
+.about-us__link {
+  align-self: flex-start;
+  width: 220px;
+  margin-top: auto;
+
+  text-align: center;
+}
+
 .contacts {
   display: flex;
   flex-direction: column;
   justify-self: flex-end;
+}
+
+.contacts__map {
+  margin-top: 7px;
+  margin-bottom: 22px;
+}
+
+.contacts__link {
+  margin-top: auto;
 }
 
 .facts {
