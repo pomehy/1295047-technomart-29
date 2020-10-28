@@ -82,6 +82,7 @@
   --special-green: #8ED78F;
 
   --basic-green: #63A63E;
+  --basic-boxshadow-button-cart: #367315;
   --basic-green-light: #5FBB2D;
   --basic-green-dark: #518534;
 
@@ -1107,8 +1108,11 @@ article[class$='new']::after {
 }
 
 .button-add-cart {
+  min-width: 135px;
+  margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 11px;
 
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
@@ -1117,9 +1121,13 @@ article[class$='new']::after {
   line-height: 18px;
   color: var(--basic-white);
   text-transform: uppercase;
+  text-align: center;
 
   background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--basic-boxshadow-button-cart);
   border-radius: 2px;
+
+  box-sizing: border-box;
 }
 
 .button-add-cart:hover,
@@ -1132,10 +1140,11 @@ article[class$='new']::after {
 }
 
 .button-add-bookmarks {
-  padding-top: 8px;
-  padding-right: 31px;
-  padding-bottom: 8px;
-  padding-left: 31px;
+  min-width: 135px;
+  margin-bottom: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
 
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
@@ -1143,8 +1152,9 @@ article[class$='new']::after {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-
   color: var(--basic-blue-dark);
+  text-align: center;
+
   border: 3px solid var(--basic-green);
   border-radius: 2px;
 
