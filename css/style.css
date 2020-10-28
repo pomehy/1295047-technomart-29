@@ -550,6 +550,7 @@ img {
 }
 
 .page-main__title {
+  margin-bottom: 19px;
   padding-top: 29px;
   padding-bottom: 30px;
   padding-left: 29px;
@@ -659,13 +660,22 @@ img {
 
 .sort {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
+  padding-top: 10px;
+  padding-right: 17px;
+  padding-bottom: 10px;
+  padding-left: 19px;
 
   background-color: var(--basic-flax-color);
 }
 
 .sort h3 {
+  margin-top: 0;
+  margin-right: 98px;
+  margin-bottom: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -676,11 +686,21 @@ img {
 
 .sort__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  min-width: 354px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.sort__item {
+  margin-right: 20px;
+}
+
+.sort__item:last-child {
+  margin-right: 0;
 }
 
 .sort__link {
@@ -705,10 +725,24 @@ img {
 }
 
 .sort__buttons-list {
+  display: flex;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.sort__buttons-list li {
+  display: flex;
+}
+
+.sort__buttons-list li:first-child {
+  margin-right: 21px;
+}
+
+.sort__button {
+  width: 11px;
+  height: 10px;
 }
 
 .pagination {
