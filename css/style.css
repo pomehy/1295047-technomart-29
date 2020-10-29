@@ -1727,6 +1727,8 @@ article[class$='new']::after {
 }
 
 .button-add-cart {
+  position: relative;
+
   min-width: 135px;
   margin-bottom: 10px;
   padding-top: 10px;
@@ -1747,6 +1749,22 @@ article[class$='new']::after {
   border-radius: 2px;
 
   box-sizing: border-box;
+}
+
+.button-add-cart::before {
+  content: '';
+
+  position: absolute;
+  left: 29px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url('../img/decor/cart-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.3;
 }
 
 .button-add-cart:hover,
@@ -1916,12 +1934,63 @@ article[class$='new']::after {
 }
 
 .service-slider__item {
+  position: relative;
   display: none;
 }
 
 .service-slider__item--active {
   display: block;
 }
+
+.service-slider__item::after {
+  content: '';
+
+  position: absolute;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service__delivery::after {
+  top: 24px;
+  right: 1px;
+
+  width: 468px;
+  height: 261px;
+
+  background-image: url('../img/decor/delivery.png');
+}
+
+.service__warranty::after {
+  top: -4px;
+  right: -8px;
+
+  width: 389px;
+  height: 293px;
+
+  background-image: url('../img/decor/warranty.png');
+}
+
+.service__credit::after {
+  top: -2px;
+  right: -10px;
+
+  width: 465px;
+  height: 285px;
+
+  background-image: url('../img/decor/credit.png');
+}
+
+.service__credit a {
+  display: block;
+  margin-top: 22px;
+  width: 195px;
+
+  text-align: center;
+
+  border-radius: 2px;
+}
+
 
 .service-slider__title {
   margin-top: -4px;
@@ -1983,7 +2052,7 @@ article[class$='new']::after {
 }
 
 .about-us  li {
-  margin-top: 12px;
+  position: relative;
   margin-bottom: 12px;
 
   font-family: 'Cuprum', Arial, sans-serif;
@@ -1993,12 +2062,21 @@ article[class$='new']::after {
   line-height: 24px;
 }
 
-.about-us li:first-child {
-  margin-top: 0;
-}
-
 .about-us li:last-child {
   margin-bottom: 0;
+}
+
+.about-us  li::before {
+  content: '';
+
+  position: absolute;
+  top: 11px;
+  left: -37px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: var(--basic-red);
 }
 
 
