@@ -553,38 +553,68 @@ input[name='main-search']:focus + svg path {
   display: none;
 }
 
-
 .autorization__user {
-  position: relative;
   display: none;
   min-width: 299px;
+
+  padding-top: 10px;
+  padding-bottom: 11px;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+
+  background-color: var(--basic-white);
+
+  box-sizing: border-box;
 }
+
 
 .user-icon {
   content: '';
 
   position: absolute;
-  top: 11px;
-  left: 15px;
+  top: 3px;
+  left: -41px;
+
+  padding-right: 25px;
+}
+
+.user__logout {
+  position: relative;
 }
 
 .logout-icon {
   content: '';
 
   position: absolute;
-  top: 12px;
-  right: 17px;
+  top: 4px;
+  right: -40px;
 }
 
-.autorization__user:hover path,
-.autorization__user:focus path {
+.user__profile {
+  position: relative;
+  color: var(--basic-black);
+}
+
+.user__profile:hover {
+  color: var(--basic-red);
+}
+
+.user__profile:hover path,
+.user__profile:focus path,
+.user__logout:hover path,
+.user__logout:focus path {
   fill: var(--basic-blue);
 }
 
-.autorization__user:active path {
+.user__profile:active path,
+.user__logout:active path {
   fill: var(--basic-grey);
 }
-
 
 .autorization--active .autorization__user {
   display: block;
@@ -1295,6 +1325,8 @@ input[name='main-search']:focus + svg path {
   position: relative;
   padding-left: 22px;
   padding-bottom: 21px;
+
+  background-color: var(--basic-social-color);
 
   box-sizing: border-box;
 
