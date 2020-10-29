@@ -736,6 +736,7 @@ input[name='main-search']:focus + svg path {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 22px;
   margin-right: 0;
   margin-bottom: 0;
@@ -746,13 +747,41 @@ input[name='main-search']:focus + svg path {
 }
 
 .breadcrumbs__item {
+  position: relative;
   display: flex;
   margin-right: 41px;
 }
 
+.breadcrumbs__item::after {
+  content: '';
+
+  position: absolute;
+  top: 3px;
+  right: -24px;
+
+  width: 7px;
+  height: 10px;
+
+  background-image: url('../img/decor/breadcrumbs-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .breadcrumbs__item:first-child .breadcrumbs__link {
   width: 14px;
-  height: 12px;
+  height: 15px;
+
+  background-image: url('../img/decor/home-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs__item:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs__item:last-child::after {
+  display: none;
 }
 
 .breadcrumbs__link {
@@ -762,6 +791,10 @@ input[name='main-search']:focus + svg path {
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.breadcrumbs__link:hover {
+  opacity: 0.5;
 }
 
 .catalog {
