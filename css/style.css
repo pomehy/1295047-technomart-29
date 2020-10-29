@@ -1185,12 +1185,27 @@ input[name='main-search']:focus + svg path {
 }
 
 .sort__buttons-list li:first-child {
-  margin-right: 21px;
+  margin-right: 18px;
 }
 
 .sort__button {
-  width: 11px;
-  height: 10px;
+  display: flex;
+  align-items: center;
+  width: 12px;
+  height: 18px;
+}
+
+.sort__button:hover path,
+.sort__button:focus path {
+  fill: var(--basic-black);
+}
+
+.sort__button--active path {
+  fill: var(--basic-red);
+}
+
+.sort__button--down {
+  transform: rotate(180deg);
 }
 
 .pagination {
