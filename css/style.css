@@ -305,8 +305,29 @@ input[name='main-search']:focus + svg path {
 }
 
 .user-menu__item {
+  position: relative;
   display: flex;
   min-width: 150px;
+}
+
+.user-menu__item::before {
+  content: '';
+
+  position: absolute;
+  top: 13px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.3;
+}
+
+.user-menu__item:hover::before {
+  opacity: 1;
+}
+
+.user-menu__item:active::before {
+  opacity: 0.3;
 }
 
 .user-menu__item a {
@@ -327,8 +348,26 @@ input[name='main-search']:focus + svg path {
   color: var(--basic-white-transparent-50);
 }
 
+.bookmarks::before {
+  left: 20px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url('../img/decor/bookmark-icon.svg');
+}
+
 .bookmarks a {
   padding-left: 19px;
+}
+
+.cart::before {
+  left: 26px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url('../img/decor/cart-icon.svg');
 }
 
 .cart--active a {
