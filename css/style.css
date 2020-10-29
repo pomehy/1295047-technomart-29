@@ -914,7 +914,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   padding-top: 9px;
   padding-right: 17px;
   padding-bottom: 10px;
@@ -999,23 +999,31 @@ img {
 
 .pagination {
   display: flex;
+  margin-top: 29px;
 }
 
 .pagination__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.pagination__link,
-.pagination__next {
+.pagination__item {
+  margin-right: 10px;
+}
+
+.pagination__item:last-child {
+  margin-right: 10px;
+}
+
+
+.pagination a {
   display: flex;
-  padding-top: 10px;
-  padding-right: 15px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   font-style: normal;
   font-weight: 400;
@@ -1026,7 +1034,20 @@ img {
 
   border: 1px solid var(--basic-grey-lighten);
   border-radius: 2px;
+
+  box-sizing: border-box;
 }
+
+.pagination__link {
+  padding-right: 14px;
+  padding-left: 15px;
+}
+
+.pagination__next {
+  padding-right: 31px;
+  padding-left: 32px;
+}
+
 
 .pagination__link:hover,
 .pagination__next:hover,
@@ -1041,7 +1062,7 @@ img {
 }
 
 
-.pagination__link--active {
+.pagination .pagination__link--active {
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
@@ -1239,12 +1260,13 @@ img {
 
 .products__list {
   display: grid;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 18px;
 
   margin: 0;
   padding-top: 20px;
   padding-right: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   padding-left: 0;
 
   list-style: none;
@@ -1340,7 +1362,7 @@ article[class$='new']::after {
 }
 
 .products__name {
-  margin-top: 9px;
+  margin-top: 8px;
 
   font-weight: 700;
   font-size: 18px;
@@ -1499,7 +1521,7 @@ article[class$='new']::after {
 }
 
 .maker {
-  margin-top: 49px;
+  margin-top: 52px;
 }
 
 .maker__list {
@@ -1735,14 +1757,20 @@ article[class$='new']::after {
 }
 
 .facts {
+  margin-top: 60px;
+  padding-top: 39px;
+  padding-bottom: 66px;
   background-color: var(--basic-grey-light);
 }
 
 .facts p {
+  margin-top: 26px;
+  margin-bottom: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 25px;
   color: var(--basic-black);
 }
 
