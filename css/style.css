@@ -244,6 +244,7 @@ img {
 }
 
 .main-nav__search {
+  position: relative;
   display: flex;
 }
 
@@ -263,9 +264,32 @@ img {
   border: none;
 }
 
+.main-nav__search svg {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 17px;
+
+  opacity: 0.3;
+}
+
+.main-nav__search:hover svg {
+  opacity: 1;
+}
+
 .main-nav__search input:focus {
   background-color: var(--basic-white);
+  outline: none;
 }
+
+input[name='main-search']:focus + svg {
+  opacity: 1;
+}
+
+input[name='main-search']:focus + svg path {
+  fill: var(--basic-red);
+}
+
 .main-nav__search input:focus::placeholder {
   color: var(--basic-black);
 }
