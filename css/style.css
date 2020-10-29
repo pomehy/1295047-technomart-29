@@ -426,6 +426,8 @@ input[name='main-search']:focus + svg path {
 }
 
 .main-header__contacts a {
+  position: relative
+  ;
   min-width: 270px;
   margin-bottom: 3px;
   padding-top: 4px;
@@ -448,7 +450,23 @@ input[name='main-search']:focus + svg path {
 
 .main-header__contacts a:hover,
 .main-header__contacts a:focus {
-  text-decoration: underline;
+  border: 3px solid var(--basic-black-transparent-40);
+}
+
+.main-header__contacts a::before {
+  content: '';
+
+  position: absolute;
+  top: 10px;
+  left: 37px;
+
+
+  width: 17px;
+  height: 19px;
+
+  background-image: url('../img/decor/phone-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-header__contacts p {
