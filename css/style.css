@@ -62,6 +62,8 @@
   --basic-black-transparent-15: rgba(0, 0, 0, 0.15);
   --basic-black-transparent-24: rgba(0, 0, 0, 0.24);
   --basic-black-transparent-30: rgba(0, 0, 0, 0.3);
+  --basic-black-transparent-40: rgba(0, 0, 0, 0.4);
+
   --basic-red: #EE3643;
   --basic-red-dark: #BA2732;
   --basic-red-light: #CA2C37;
@@ -849,10 +851,38 @@ img {
   border-radius: 50%;
 }
 
+.filter__input-checkbox:hover + label::before,
+.filter__input-radio:hover + label::before,
+.filter__input-checkbox:focus + label::before,
+.filter__input-radio:focus + label::before  {
+  border-color: var(--basic-grey-dark);
+}
+
+.filter__input-checkbox:hover + label::after,
+.filter__input-checkbox:focus + label::after {
+  background-image: url('../img/decor/checkbox-on-hover.svg');
+}
+
+.filter__input-radio:hover + label::after {
+  background-color: var(--basic-grey-dark);
+}
+
+.filter__input-checkbox:disabled + label::before,
+.filter__input-checkbox:disabled + label::after {
+  opacity: 0.3;
+}
+
+.filter__input-checkbox:disabled + label,
+.filter__input-radio:disabled + label {
+  color: var(--basic-black-transparent-40);
+  cursor: auto;
+}
+
 .filter__button {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 10px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   font-style: normal;
   font-weight: 400;
@@ -870,7 +900,6 @@ img {
   cursor: pointer;
 }
 
-
 .filter__button:hover,
 .filter__button:focus {
   border-color: var(--basic-grey);
@@ -879,7 +908,6 @@ img {
 .filter__button:active {
   border-color: var(--basic-red);
 }
-
 
 
 .sort {
