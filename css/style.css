@@ -514,10 +514,31 @@ input[name='main-search']:focus + svg path {
 }
 
 .autorization__login {
+  position: relative;
+
   min-width: 121px;
   margin-right: 10px;
   padding-left: 19px;
 }
+
+.autorization__login svg {
+  content: '';
+
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+
+
+.autorization__login:hover path,
+.autorization__login:focus path {
+  fill:  var(--basic-blue);
+}
+
+.autorization__login:active path {
+  fill:  var(--basic-grey);
+}
+
 
 .autorization__registration {
   min-width: 150px;
@@ -534,9 +555,36 @@ input[name='main-search']:focus + svg path {
 
 
 .autorization__user {
+  position: relative;
   display: none;
   min-width: 299px;
 }
+
+.user-icon {
+  content: '';
+
+  position: absolute;
+  top: 11px;
+  left: 15px;
+}
+
+.logout-icon {
+  content: '';
+
+  position: absolute;
+  top: 12px;
+  right: 17px;
+}
+
+.autorization__user:hover path,
+.autorization__user:focus path {
+  fill: var(--basic-blue);
+}
+
+.autorization__user:active path {
+  fill: var(--basic-grey);
+}
+
 
 .autorization--active .autorization__user {
   display: block;
@@ -578,13 +626,47 @@ input[name='main-search']:focus + svg path {
 }
 
 .autorization__item {
+  position: relative;
   margin-right: 32px;
+}
+
+.autorization__item::after {
+  content: '';
+
+  position: absolute;
+  top: 8px;
+  left: -18px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: var(--basic-blue);
+  border-radius: 50%;
 }
 
 .autorization__item:last-child {
   margin-right: 0;
 }
+.autorization__item:first-child::after {
+  display: none;
+}
 
+.autorization__item:hover::after,
+.autorization__item:focus::after {
+  background-color: var(--basic-red);
+}
+
+.autorization__item:hover + .autorization__item::after {
+  background-color: var(--basic-red);
+}
+
+.autorization__item:active::after {
+  background-color: var(--basic-grey);
+}
+
+.autorization__item:active + .autorization__item::after {
+  background-color: var(--basic-grey);
+}
 
 .main-header__nav {
   padding-bottom: 60px;
