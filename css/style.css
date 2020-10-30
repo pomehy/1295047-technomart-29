@@ -1508,6 +1508,15 @@ input[name='main-search']:focus + svg path {
   background-position: center;
 }
 
+.slider__button:hover,
+.slider__button:focus {
+  opacity: 0.7;
+}
+
+.slider__button:active {
+  opacity: 0.5;
+}
+
 .slider__button--prev {
   top: 112px;
   left: 15px;
