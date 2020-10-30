@@ -2605,7 +2605,7 @@ article[class$='new']::after {
   border: none;
 }
 
-.message-add-cart {
+.message-user {
   flex-direction: column;
   width: 620px;
   height: 282px;
@@ -2617,7 +2617,7 @@ article[class$='new']::after {
   box-sizing: border-box;
 }
 
-.message-add-cart::after {
+.message-user::after {
   content: '';
 
   position: absolute;
@@ -2631,9 +2631,7 @@ article[class$='new']::after {
   background-color: var(--bg-botton-color-write-us);
 }
 
-
-
-.message-add-cart__text {
+.message-user__text {
   position: relative;
 
   font-family: 'Cuprum', Arial, sans-serif;
@@ -2644,7 +2642,7 @@ article[class$='new']::after {
   text-align: center;
 }
 
-.message-add-cart__text::before {
+.message-user__text::before {
   content: '';
 
   position: absolute;
@@ -2659,7 +2657,7 @@ article[class$='new']::after {
   background-position: center;
 }
 
-.message-add-cart-button-wrapper {
+.message-user-button-wrapper {
   display: flex;
   justify-content: center;
   margin-top: auto;
@@ -2670,7 +2668,33 @@ article[class$='new']::after {
   margin-right: 10px;
 }
 
-.message-add-cart__button {
+.message-add-bookmarks__link {
+  width: 192px;
+  margin-right: 10px;
+
+  background-color: var(--basic-green);
+}
+
+.button-add-cart:hover,
+.button-add-cart:focus {
+  background-color: var(--basic-green-light);
+}
+
+.button-add-cart:active {
+  background-color: var(--basic-green-dark);
+}
+
+.message-add-bookmarks__link:hover,
+.message-add-bookmarks__link:focus {
+  background-color: var(--basic-green-light);
+}
+
+.message-add-bookmarks__link:active {
+  background-color: var(--basic-green-dark);
+}
+
+.message-add-cart__continue,
+.message-add-bookmarks__continue {
   width: 192px;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -2690,13 +2714,13 @@ article[class$='new']::after {
   cursor: pointer;
 }
 
-.message-add-cart__button:hover,
-.message-add-cart__button:focus {
+.message-add-cart__continue:hover,
+.message-add-cart__continue:focus {
 
   border-color: var(--basic-grey);
 }
 
-.message-add-cart__button:active {
+.message-add-cart__continue:active {
   border-color: var(--basic-red);
 }
 
