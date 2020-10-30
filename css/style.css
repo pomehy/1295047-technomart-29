@@ -1440,9 +1440,17 @@ input[name='main-search']:focus + svg path {
   position: relative;
   display: none;
   min-height: 266px;
-  padding-top: 23px;
   padding-bottom: 27px;
+
+  box-sizing: border-box;
+}
+
+.slider-item-text-wrapper {
+  width: 100%;
+  padding-top: 23px;
   padding-left: 24px;
+
+  background-color: var(--basic-black-transparent-24);
 
   box-sizing: border-box;
 }
@@ -1475,6 +1483,7 @@ input[name='main-search']:focus + svg path {
 
 .slider__item p {
   margin-top: 6px;
+  margin-bottom: 15px;
 
   font-family: 'Cuprum', Arial, sans-serif;
   font-style: normal;
@@ -1486,6 +1495,7 @@ input[name='main-search']:focus + svg path {
 
 .slider__link {
   margin-top: auto;
+  margin-left: 24px;
 }
 
 .slider__control {
