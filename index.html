@@ -441,5 +441,29 @@
         </div>
       </div>
     </footer>
+    <section class="modal map-modal">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0accc4928b04a5b36e9420336984a8e3d5d73204c46e8998c3c61c421b97cc7d&amp;source=constructor"></iframe>
+      <button class="close-modal map-modal--close" type="button" aria-label="Закрыть"></button>
+    </section>
+    <section class="modal write-us">
+      <h2 class="visually-hidden">Связаться с нами</h2>
+      <form class="write-us__form" method="POST" action="https://echo.htmlacademy.ru">
+        <div class="write-us__input-wrapper">
+          <label for="write-us-name">Ваше имя:</label>
+          <input type="text" name="user-name" id="write-us-name" placeholder="Имя Фамилия" autofocus>
+        </div>
+        <div class="write-us__input-wrapper">
+          <label for="write-us-mail">Ваш e-mail:</label>
+          <input type="email" name="user-email" id="write-us-mail" placeholder="email@example.com">
+        </div>
+        <div class="write-us__textarea-wrapper">
+          <label for="write-us-text">Текст письма</label>
+          <textarea name="user-text" id="write-us-text" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="button write-us__button" type="submit">Отправить</button>
+      </form>
+      <button class="close-modal write-us--close" type="button" aria-label="Закрыть"></button>
+    </section>
   </body>
 </html>
