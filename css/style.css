@@ -1508,8 +1508,12 @@ input[name='main-search']:focus + svg path {
   width: 40px;
   height: 60px;
 
+  border: none;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
+
+  cursor: pointer;
 }
 
 .slider__button:hover,
