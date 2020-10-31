@@ -175,35 +175,12 @@ if (writeUsLink) {
   });
 }
 
-// промо слайдер
-
-
-if (sliderControls) {
-  sliderControls.addEventListener('click', function (evt) {
-    if (evt.target.classList.contains('slider__toggle')) {
-      let array = Array.from(promoSliderToggles);
-      let target = evt.target;
-      let index = array.indexOf(target);
-
-      array.forEach(function (item, i, arr) {
-        if (i === index) {
-          item.classList.add('slider__toggle--active');
-          promoSliderItems[i].classList.add('slider__item--active');
-        } else {
-          item.classList.remove('slider__toggle--active');
-          promoSliderItems[i].classList.remove('slider__item--active');
-        }
-      });
-    }
-  });
-}
-
 // сервис слайдер
 
 if (serviceSliderNav) {
   serviceSliderNav.addEventListener('click', function (evt) {
     if (evt.target.classList.contains('service-slider__button')) {
-      event.preventDefault();
+      evt.preventDefault();
       let array = Array.from(serviceSliderButtons);
       let target = evt.target;
       let index = array.indexOf(target);
@@ -219,4 +196,65 @@ if (serviceSliderNav) {
       });
     }
   });
+}
+
+if (sliderControls) {
+  /*обработчик клика на блоке с кнопками в первом слайде*/
+  sliderControls.addEventListener('click', function (evt) {
+    let promoSliderToggle = Array.from(promoSliderToggles);
+    let target = evt.target;
+    let index = promoSliderToggle.indexOf(target);
+
+    currentSlide(index + 1);
+  });
+
+  /* Устанавливаем индекс слайда по умолчанию */
+  let slideIndex = 2;
+  showSlides(slideIndex);
+
+  /* Увеличиваем индекс на 1 — показываем следующий слайд*/
+  promoSliderButtonNext.addEventListener('click', function nextSlide() {
+    showSlides(slideIndex += 1);
+    addActiveClass(slideIndex);
+  });
+
+  /* Уменьшает индекс на 1 — показываем предыдущий слайд*/
+  promoSliderButtonPrev.addEventListener('click', function previousSlide() {
+    showSlides(slideIndex -= 1);
+    addActiveClass(slideIndex);
+  });
+
+  /* Устанавливаем текущий слайд */
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+    addActiveClass(slideIndex);
+  }
+
+  currentSlide(slideIndex);
+
+  /* Функция добавления класса на активный слайд */
+  function addActiveClass(n) {
+    let promoSliderToggle = document.getElementsByClassName('slider__toggle');
+
+    for (let button of promoSliderToggle) {
+      button.classList.remove('slider__toggle--active');
+    }
+    promoSliderToggle[slideIndex - 1].classList.add('slider__toggle--active');
+  }
+
+  /* Функция перелистывания */
+  function showSlides(n) {
+    if (n > promoSliderItems.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = promoSliderItems.length
+    }
+
+    /* Проходим по каждому слайду в цикле for */
+    for (let slide of promoSliderItems) {
+      slide.classList.remove('slider__item--active');
+    }
+    promoSliderItems[slideIndex - 1].classList.add('slider__item--active');
+  }
 }
