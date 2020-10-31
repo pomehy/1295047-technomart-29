@@ -177,6 +177,7 @@ img {
 
 .main-header__top .container {
   display: grid;
+  grid-template-columns: -webkit-max-content 3fr 5fr;
   grid-template-columns: max-content 3fr 5fr;
 }
 
@@ -274,8 +275,24 @@ input[name='main-search']:focus + svg path {
   fill: var(--basic-red);
 }
 
+.main-nav__search input:focus::-webkit-input-placeholder {
+  color: var(--basic-black);
+}
+
+.main-nav__search input:focus::-moz-placeholder {
+  color: var(--basic-black);
+}
+
 .main-nav__search input:focus::placeholder {
   color: var(--basic-black);
+}
+
+.main-nav__search input::-webkit-input-placeholder {
+  color: var(--basic-white);
+}
+
+.main-nav__search input::-moz-placeholder {
+  color: var(--basic-white);
 }
 
 .main-nav__search input::placeholder {
@@ -1623,7 +1640,8 @@ input[name='main-search']:focus + svg path {
 
 .products__list {
   display: grid;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   row-gap: 18px;
 
   margin: 0;
@@ -1742,7 +1760,8 @@ article[class$='new']::after {
   font-size: 17px;
   line-height: 18px;
   color: var(--old-price-color);
-  text-decoration-line: line-through;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
 }
 
 .products__price {
@@ -1959,6 +1978,7 @@ article[class$='new']::after {
 
 .service-slider {
   display: grid;
+  grid-template-columns: -webkit-max-content auto;
   grid-template-columns: max-content auto;
   gap: 80px;
   margin-top: 70px;
@@ -2223,6 +2243,7 @@ article[class$='new']::after {
 
 .footer-nav .container {
   display: grid;
+  grid-template-columns: -webkit-max-content auto;
   grid-template-columns: max-content auto;
 }
 
@@ -2272,6 +2293,7 @@ article[class$='new']::after {
 
 .main-footer__middle .container {
   display: grid;
+  grid-template-columns: -webkit-max-content auto;
   grid-template-columns: max-content auto;
   justify-content: space-between;
 }
@@ -2344,6 +2366,7 @@ article[class$='new']::after {
 
 .main-footer__bottom .container {
   display: grid;
+  grid-template-columns: -webkit-max-content 1fr 1fr auto;
   grid-template-columns: max-content 1fr 1fr auto;
   gap: 20px;
   justify-content: space-between;
@@ -2563,6 +2586,14 @@ article[class$='new']::after {
   box-sizing: border-box;
 }
 
+.write-us__form input::-webkit-input-placeholder, .write-us__form textarea::-webkit-input-placeholder {
+  color: var(--old-price-color);
+}
+
+.write-us__form input::-moz-placeholder, .write-us__form textarea::-moz-placeholder {
+  color: var(--old-price-color);
+}
+
 .write-us__form input::placeholder,
 .write-us__form textarea::placeholder {
   color: var(--old-price-color);
@@ -2731,11 +2762,31 @@ article[class$='new']::after {
 
 .modal-show {
   display: flex;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes bounce {
@@ -2753,6 +2804,28 @@ article[class$='new']::after {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
